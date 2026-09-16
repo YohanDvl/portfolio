@@ -208,7 +208,27 @@ const PROJECT_CASE_STUDIES = {
       "Escaneo rápido utilizando la cámara del dispositivo con respuesta visual en milisegundos."
     ],
     stack: "Angular, Ionic Framework, Capacitor, TypeScript, HTML5 Canvas",
-    links: []
+    links: [
+      { text: "Ver Demo Web en Vivo", url: "https://yohandvl.github.io/generador-de-QR/", primary: true },
+      { text: "Explorar Código en GitHub", url: "https://github.com/YohanDvl/generador-de-QR", primary: false }
+    ]
+  },
+  moica: {
+    title: "Facturador Multisoluciones Moica",
+    tagline: "Sistema de facturación empresarial, cálculo de impuestos y generación de comprobantes PDF.",
+    challenge: "La gestión manual de comprobantes de pago y recibos comerciales en pequeños y medianos negocios genera discrepancias contables, lentitud en atención en punto de venta y formatos desordenados.",
+    solution: "Se construyó una solución multi-entorno con React 19 y jsPDF/AutoTable que permite registrar artículos, calcular subtotales, IVA y retenciones de forma instantánea, guardar facturas en almacenamiento local persistente y emitir PDFs con diseño corporativo en menos de 1 segundo. Cuenta con arquitectura portable compatible con navegador, escritorio (Electron) y móvil (Capacitor).",
+    architecturePoints: [
+      "Motor de generación vectorial de documentos PDF directamente en el cliente con jsPDF.",
+      "Compatibilidad cruzada: ejecutable de escritorio con Electron y empaquetado para Android con Capacitor.",
+      "Almacenamiento reactivo local para consultar historial de facturas sin conexión a internet.",
+      "Diseño responsive optimizado para tabletas en punto de venta y computadoras de escritorio."
+    ],
+    stack: "React 19, Vite, jsPDF, jspdf-autotable, Electron, Capacitor, Lucide Icons",
+    links: [
+      { text: "Ver Demo en Vivo", url: "https://yohandvl.github.io/facturador-moica/", primary: true },
+      { text: "Explorar Código en GitHub", url: "https://github.com/YohanDvl/facturador-moica", primary: false }
+    ]
   }
 };
 
