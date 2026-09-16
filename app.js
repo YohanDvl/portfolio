@@ -62,6 +62,8 @@ function initCalculator() {
   const copyBtn = document.getElementById('btn-copy-proposal');
   const copyAlert = document.getElementById('copy-alert');
 
+  const whatsappBtn = document.getElementById('btn-calc-whatsapp');
+
   if (!form) return;
 
   function recalculate() {
@@ -93,6 +95,12 @@ function initCalculator() {
 
     if (sumDaysEl) sumDaysEl.textContent = `~${minDays} a ${maxDays} días hábiles`;
     if (sumBudgetEl) sumBudgetEl.textContent = `$${minPrice} – $${maxPrice} USD`;
+
+    if (whatsappBtn) {
+      const typeTitle = selectedType?.closest('.calc-option')?.querySelector('.opt-title')?.textContent || 'Proyecto Web';
+      const msg = `Hola Yohan, estuve usando el cotizador de tu portafolio para un "${typeTitle}" (~${minDays}-${maxDays} días, estimado: $${minPrice}-$${maxPrice} USD). Me gustaría darte los detalles para iniciar en Workana.`;
+      whatsappBtn.href = `https://wa.me/573009446681?text=${encodeURIComponent(msg)}`;
+    }
   }
 
   // Bind changes
