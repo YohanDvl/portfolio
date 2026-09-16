@@ -168,7 +168,10 @@ const PROJECT_CASE_STUDIES = {
       "Panel interno para actualizar tarifas y disponibilidad en tiempo real."
     ],
     stack: "React, Vite, Node.js, Express, SQLite, Vanilla CSS Modular",
-    links: []
+    links: [
+      { text: "Ver Demo en Vivo", url: "https://yohandvl.github.io/cartagena-tours/", primary: true },
+      { text: "Explorar Código en GitHub", url: "https://github.com/YohanDvl/cartagena-tours", primary: false }
+    ]
   },
   prestamo: {
     title: "PrestamoApp — Core Financiero Cliente/Servidor TCP",
