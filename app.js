@@ -99,7 +99,7 @@ function initCalculator() {
     if (whatsappBtn) {
       const typeTitle = selectedType?.closest('.calc-option')?.querySelector('.opt-title')?.textContent || 'Proyecto Web';
       const msg = `Hola Yohan, estuve usando el cotizador de tu portafolio para un "${typeTitle}" (~${minDays}-${maxDays} días, estimado: $${minPrice}-$${maxPrice} USD). Me gustaría darte los detalles para iniciar en Workana.`;
-      whatsappBtn.href = `https://wa.me/573009446681?text=${encodeURIComponent(msg)}`;
+      whatsappBtn.href = `https://wa.me/573015147536?text=${encodeURIComponent(msg)}`;
     }
   }
 
