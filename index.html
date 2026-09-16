@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yohan Maldonado | Desarrollador Full-Stack & Arquitecto de Software</title>
+  <meta name="description" content="Portafolio profesional de Yohan Maldonado. Especialista en arquitecturas escalables, aplicaciones web modernas (Angular, React, Node.js), APIs seguras y estándares de ingeniería de software. Disponible para proyectos freelance en Workana.">
+  <meta name="keywords" content="Yohan Maldonado, Desarrollador Full Stack, Arquitecto de Software, Workana Freelance, Angular, React, Node.js, Arquitectura Hexagonal, OWASP, ISO 15289">
+  <meta name="author" content="Yohan Maldonado">
+  
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yohan Maldonado — Full-Stack Developer & Software Architect">
+  <meta property="og:description" content="Desarrollo de software empresarial, aplicaciones web robustas y arquitecturas limpias sin deuda técnica.">
+  <meta property="og:url" content="https://yohandvl.github.io/portfolio/">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22 width=%22100%22 height=%22100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="nav-brand">
+        <span class="brand-badge">&lt;/&gt;</span>
+        <span class="brand-name">yohan<span class="brand-dot">.</span>dev</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#proyectos" class="nav-link" id="nav-link-projects">Proyectos</a></li>
+          <li><a href="#servicios" class="nav-link" id="nav-link-services">Servicios</a></li>
+          <li><a href="#calculadora" class="nav-link" id="nav-link-calculator">Cotizador</a></li>
+          <li><a href="#sobre-mi" class="nav-link" id="nav-link-about">Metodología</a></li>
+          <li><a href="#contacto" class="nav-link" id="nav-link-contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.workana.com/freelancer/yohandvl" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-workana" id="btn-header-workana">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+          Contratar en Workana
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Freelance Status Pill -->
+        <div class="status-pill" id="hero-status-pill">
+          <span class="status-dot"></span>
+          <span class="status-text">Disponible para proyectos freelance en <strong>Workana</strong></span>
+        </div>
+
+        <h1 class="hero-title" id="hero-main-title">
+          Construyo aplicaciones web <span class="gradient-text">escalables, rápidas</span> y sin código espagueti.
+        </h1>
+
+        <p class="hero-description" id="hero-subtitle">
+          Soy <strong>Yohan Maldonado</strong>, Desarrollador Full-Stack & Arquitecto de Software. Transformo requerimientos de negocio en plataformas listas para producción (Angular, React, Node.js, Java), con arquitecturas limpias, seguridad OWASP y documentación que tu equipo podrá entender y mantener en el tiempo.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="https://www.workana.com/freelancer/yohandvl" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-hero-workana">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+            Contratar por Workana
+          </a>
+          <a href="#calculadora" class="btn btn-secondary" id="btn-hero-calc">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1-2-1z"/><path d="M16 8h-8"/><path d="M16 12h-8"/><path d="M10 16H8"/></svg>
+            Cotizar Proyecto
+          </a>
+          <a href="https://github.com/YohanDvl" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="btn-hero-github">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+
+        <!-- Engineering Trust Metrics -->
+        <div class="trust-metrics-grid" id="trust-metrics">
+          <div class="metric-card">
+            <span class="metric-val">100%</span>
+            <span class="metric-lbl">Pruebas automatizadas en verde</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">ISO/IEC</span>
+            <span class="metric-lbl">Conformidad 15289 & 42010</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">OWASP</span>
+            <span class="metric-lbl">Seguridad ASVS Nivel 2</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">&lt; 250ms</span>
+            <span class="metric-lbl">Latencia p95 en APIs</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREELANCE COMPARISON / VALUE PROP -->
+    <section class="value-prop-section">
+      <div class="container">
+        <div class="section-badge">Garantía de Calidad</div>
+        <h2 class="section-title">¿Por qué clientes en Workana eligen trabajar conmigo?</h2>
+        <p class="section-subtitle">El desarrollo de software no se trata solo de escribir código, sino de entregar una solución que no se rompa mañana ni te obligue a reconstruirla desde cero.</p>
+
+        <div class="comparison-grid">
+          <div class="comparison-card bad">
+            <div class="comp-header">
+              <span class="comp-badge bad-badge">El problema habitual</span>
+              <h3>Desarrollo improvisado</h3>
+            </div>
+            <ul class="comp-list">
+              <li>❌ Código sin arquitectura donde cambiar un botón rompe tres pantallas.</li>
+              <li>❌ Sin pruebas automatizadas: el cliente es quien descubre los errores en producción.</li>
+              <li>❌ Vulnerabilidades básicas de seguridad (inyecciones SQL, tokens expuestos).</li>
+              <li>❌ Silencio durante días y entregas con retrasos inesperados.</li>
+              <li>❌ Cero documentación: si el freelancer se va, nadie puede tocar el proyecto.</li>
+            </ul>
+          </div>
+
+          <div class="comparison-card good">
+            <div class="comp-header">
+              <span class="comp-badge good-badge">Mi estándar de entrega</span>
+              <h3>Ingeniería profesional</h3>
+            </div>
+            <ul class="comp-list">
+              <li>✅ <strong>Arquitectura limpia y modular</strong> (Hexagonal, DDD) desacoplada de frameworks.</li>
+              <li>✅ <strong>Suite de pruebas automatizadas</strong> (Jest, Supertest, PHPUnit) verificadas antes del deploy.</li>
+              <li>✅ <strong>Ciberseguridad OWASP</strong>: JWT en cookies HttpOnly, anti-CSRF y sanitización de inputs.</li>
+              <li>✅ <strong>Comunicación diaria en Workana</strong> con avances en video o enlaces de staging en vivo.</li>
+              <li>✅ <strong>Documentación formal</strong>: Contratos OpenAPI 3.1, diagramas C4 y guía paso a paso de puesta en marcha.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE -->
+    <section class="projects-section" id="proyectos">
+      <div class="container">
+        <div class="section-badge">Casos de Estudio & Código Real</div>
+        <h2 class="section-title">Proyectos destacados y código en producción</h2>
+        <p class="section-subtitle">Proyectos reales con código fuente inspeccionable, métricas de rendimiento y portales interactivos desplegados.</p>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters" id="project-filters" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="filter-all">Todos (6)</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false" id="filter-fullstack">Full-Stack & Web</button>
+          <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false" id="filter-backend">Backend & Arquitectura</button>
+          <button class="filter-btn" data-filter="systems" role="tab" aria-selected="false" id="filter-systems">Sistemas & Concurrencia</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- PROJECT 1: EVENTCONNECT -->
+          <article class="project-card featured-highlight" data-category="fullstack backend" id="project-eventconnect">
+            <div class="card-header-bar">
+              <span class="badge badge-primary">Enterprise Full-Stack</span>
+              <span class="badge badge-secondary">ISO 15289 Compliant</span>
+              <span class="badge badge-success">Voz IA</span>
+            </div>
+            <div class="card-content">
+              <div class="card-title-group">
+                <h3 class="card-title">EventConnect — Plataforma de Gestión de Eventos & Ticketing Seguro</h3>
+                <p class="card-tagline">Arquitectura Hexagonal, WebSockets en tiempo real, verificación QR criptográfica y Agente de Voz para Super Admin.</p>
+              </div>
+
+              <div class="card-metrics-banner">
+                <div class="metric-item">
+                  <span class="val">11/11</span>
+                  <span class="lbl">Tests Jest/Supertest (100%)</span>
+                </div>
+                <div class="metric-item">
+                  <span class="val">p95 &lt; 250ms</span>
+                  <span class="lbl">Latencia de checkout</span>
+                </div>
+                <div class="metric-item">
+                  <span class="val">ASVS L2</span>
+                  <span class="lbl">OWASP Security Audit</span>
+                </div>
+              </div>
+
+              <p class="card-description">
+                Diseñada para gestionar aforos masivos con control de concurrencia mediante SQLite en modo WAL y Socket.io. Incorpora un Agente de Voz Super Admin operado con Web Speech API para consulta de métricas en lenguaje natural y portal de arquitectura C4 interactivo.
+              </p>
+
+              <div class="tech-stack-tags">
+                <span class="tag">Angular SPA</span>
+                <span class="tag">Node.js / Express</span>
+                <span class="tag">Socket.io</span>
+                <span class="tag">SQLite WAL</span>
+                <span class="tag">OpenAPI 3.1</span>
+                <span class="tag">Web Speech API</span>
+                <span class="tag">Archify C4</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://yohandvl.github.io/eventconnect/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" id="btn-eventconnect-demo">
+                  <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Portal Interactivo en Vivo
+                </a>
+                <a href="https://github.com/YohanDvl/eventconnect" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" id="btn-eventconnect-code">
+                  <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  Ver Código GitHub
+                </a>
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project="eventconnect" id="btn-eventconnect-modal">
+                  Detalles de Arquitectura &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: CARTAGENA TOURS -->
+          <article class="project-card" data-category="fullstack" id="project-cartagena-tours">
+            <div class="card-media">
+              <img src="assets/projects/cartagena-tours.png" alt="Cartagena Tours Plataforma" class="card-img" loading="lazy">
+              <div class="media-overlay">
+                <span class="badge badge-accent">Turismo & E-Commerce</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-title-group">
+                <h3 class="card-title">Cartagena Tours — Plataforma de Reservas Turísticas</h3>
+                <p class="card-tagline">Catálogo dinámico, cotización de paquetes en tiempo real y panel de gestión de operadores.</p>
+              </div>
+
+              <p class="card-description">
+                Plataforma web rápida y adaptable optimizada para conversión de turistas nacionales e internacionales. Incluye motor de búsqueda con filtros instantáneos, cálculo de tarifas con extras, gestión de itinerarios y carrito de reservas.
+              </p>
+
+              <div class="tech-stack-tags">
+                <span class="tag">React</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">Vanilla CSS Responsive</span>
+              </div>
+
+              <div class="card-actions">
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project="cartagena" id="btn-cartagena-modal">
+                  Ver Estudio de Caso &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: PRESTAMO APP (TCP SOCKETS) -->
+          <article class="project-card" data-category="backend systems" id="project-prestamoapp">
+            <div class="card-header-bar">
+              <span class="badge badge-warning">Fintech & Concurrencia</span>
+              <span class="badge badge-secondary">Java Sockets TCP</span>
+            </div>
+            <div class="card-content">
+              <div class="card-title-group">
+                <h3 class="card-title">PrestamoApp — Core Financiero Cliente/Servidor TCP</h3>
+                <p class="card-tagline">Arquitectura multihilo para liquidación de créditos bancarios y generación de reportes de amortización en PDF.</p>
+              </div>
+
+              <p class="card-description">
+                Sistema distribuido de alta eficiencia que procesa múltiples conexiones concurrentes sin dependencias de frameworks web. Implementa un protocolo binario/texto optimizado sobre TCP puro, cálculo exacto de amortizaciones y generación de certificados en PDF.
+              </p>
+
+              <div class="tech-stack-tags">
+                <span class="tag">Java 17</span>
+                <span class="tag">TCP Sockets</span>
+                <span class="tag">Multithreading</span>
+                <span class="tag">Algoritmos Financieros</span>
+                <span class="tag">iText PDF</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://github.com/YohanDvl/PrestamoApp" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" id="btn-prestamo-code">
+                  <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  Ver en GitHub
+                </a>
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project="prestamo" id="btn-prestamo-modal">
+                  Detalles Técnicos &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: HEXAGONAL ARCHITECTURE LAB -->
+          <article class="project-card" data-category="backend" id="project-hexagonal">
+            <div class="card-header-bar">
+              <span class="badge badge-secondary">Clean Architecture</span>
+              <span class="badge badge-primary">Domain-Driven Design</span>
+            </div>
+            <div class="card-content">
+              <div class="card-title-group">
+                <h3 class="card-title">Catálogo de Refactorización & Arquitectura Hexagonal</h3>
+                <p class="card-tagline">Laboratorio técnico de transición de anti-patrones hacia Puertos y Adaptadores en Java 17.</p>
+              </div>
+
+              <p class="card-description">
+                Repositorio educativo de alto valor arquitectónico que documenta cómo transformar código legado con alto acoplamiento hacia una arquitectura hexagonal pura con entidades de dominio inviolables, repositorios desacoplados y casos de uso testeables de forma aislada.
+              </p>
+
+              <div class="tech-stack-tags">
+                <span class="tag">Java 17</span>
+                <span class="tag">Hexagonal Architecture</span>
+                <span class="tag">DDD</span>
+                <span class="tag">Clean Code</span>
+                <span class="tag">JUnit 5</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://github.com/YohanDvl/users-management-hexagonal-bad-practices" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" id="btn-hexagonal-code">
+                  <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  Ver en GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: PHP SOFTWARE QUALITY & OWASP -->
+          <article class="project-card" data-category="backend" id="project-php-quality">
+            <div class="card-header-bar">
+              <span class="badge badge-success">ISO 29119 Testing</span>
+              <span class="badge badge-accent">OWASP Top 10</span>
+            </div>
+            <div class="card-content">
+              <div class="card-title-group">
+                <h3 class="card-title">Suite de Aseguramiento de Calidad & Seguridad de Software</h3>
+                <p class="card-tagline">Framework de pruebas automatizadas y verificación de cumplimiento normativo para backend.</p>
+              </div>
+
+              <p class="card-description">
+                Estructura de validación continua que evalúa cobertura de pruebas, estricto cumplimiento de estándares de codificación, análisis estático de vulnerabilidades y mitigación de inyecciones y accesos no autorizados.
+              </p>
+
+              <div class="tech-stack-tags">
+                <span class="tag">PHP 8+</span>
+                <span class="tag">PHPUnit</span>
+                <span class="tag">Static Analysis</span>
+                <span class="tag">ISO/IEC/IEEE 29119</span>
+                <span class="tag">OWASP ASVS</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://github.com/YohanDvl/PHP-Software-Quality" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" id="btn-php-code">
+                  <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  Ver en GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: QR GENERATOR (IONIC / MOBILE) -->
+          <article class="project-card" data-category="fullstack systems" id="project-qr">
+            <div class="card-header-bar">
+              <span class="badge badge-primary">Mobile & Web</span>
+              <span class="badge badge-secondary">Capacitor</span>
+            </div>
+            <div class="card-content">
+              <div class="card-title-group">
+                <h3 class="card-title">Generador & Validador de Credenciales QR</h3>
+                <p class="card-tagline">Solución híbrida multiplataforma para emisión y lectura rápida de códigos QR offline/online.</p>
+              </div>
+
+              <p class="card-description">
+                Desarrollada para control de accesos rápidos y validación de credenciales en terreno. Cuenta con renderizado vectorial de códigos QR, almacenamiento local reactivo y compatibilidad para despliegue web y móvil nativo mediante Capacitor.
+              </p>
+
+              <div class="tech-stack-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">Ionic</span>
+                <span class="tag">Capacitor</span>
+                <span class="tag">TypeScript</span>
+              </div>
+
+              <div class="card-actions">
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project="qr" id="btn-qr-modal">
+                  Ver Detalles &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FREELANCE SERVICES -->
+    <section class="services-section" id="servicios">
+      <div class="container">
+        <div class="section-badge">Servicios Profesionales</div>
+        <h2 class="section-title">¿En qué puedo ayudarte en tu proyecto?</h2>
+        <p class="section-subtitle">Servicios estructurados con entregables claros, hitos medibles y acompañamiento continuo en Workana.</p>
+
+        <div class="services-grid">
+          
+          <div class="service-card" id="service-fullstack">
+            <div class="service-icon">💻</div>
+            <h3 class="service-title">Desarrollo Web Full-Stack</h3>
+            <p class="service-desc">Construcción de aplicaciones web interactivas (SPAs), paneles de administración, plataformas SaaS y landing pages orientadas a conversión con Angular, React o JavaScript moderno.</p>
+            <ul class="service-points">
+              <li>Interfaces ultra-rápidas y adaptadas a móviles.</li>
+              <li>Consumo optimizado de APIs y manejo de estado.</li>
+              <li>Cumplimiento de accesibilidad WCAG 2.2.</li>
+            </ul>
+          </div>
+
+          <div class="service-card" id="service-backend">
+            <div class="service-icon">⚙️</div>
+            <h3 class="service-title">APIs REST & Arquitectura Backend</h3>
+            <p class="service-desc">Diseño e implementación de servidores robustos en Node.js o Java, microservicios, eventos en tiempo real con WebSockets y modelado de bases de datos relacionales eficientes.</p>
+            <ul class="service-points">
+              <li>Arquitectura Hexagonal (fácil de escalar y mantener).</li>
+              <li>Documentación completa de contratos con OpenAPI 3.1.</li>
+              <li>Optimización de consultas SQL y alta concurrencia.</li>
+            </ul>
+          </div>
+
+          <div class="service-card" id="service-security">
+            <div class="service-icon">🛡️</div>
+            <h3 class="service-title">Seguridad Web & Auditoría OWASP</h3>
+            <p class="service-desc">Blindaje técnico de plataformas web existentes. Detección y mitigación de vulnerabilidades de seguridad comunes antes de que afecten tus datos o los de tus clientes.</p>
+            <ul class="service-points">
+              <li>Autenticación segura con JWT en cookies HttpOnly.</li>
+              <li>Protección contra inyecciones SQL, XSS y ataques CSRF.</li>
+              <li>Revisión de permisos por roles (RBAC estricto).</li>
+            </ul>
+          </div>
+
+          <div class="service-card" id="service-refactor">
+            <div class="service-icon">🧹</div>
+            <h3 class="service-title">Refactorización & Pruebas</h3>
+            <p class="service-desc">¿Tienes un proyecto con código desordenado o lleno de bugs? Lo reestructuro sin detener tu operación, eliminando deuda técnica y agregando pruebas automatizadas.</p>
+            <ul class="service-points">
+              <li>Suites de pruebas unitarias y de integración (Jest, JUnit, PHPUnit).</li>
+              <li>Desacoplamiento de componentes y Clean Code.</li>
+              <li>Reducción comprobada de errores en producción.</li>
+            </ul>
+          </div>
+
+          <div class="service-card" id="service-ai">
+            <div class="service-icon">🎙️</div>
+            <h3 class="service-title">Integraciones de IA & Agentes</h3>
+            <p class="service-desc">Incorporación de capacidades inteligentes en tus sistemas: interfaces controladas por voz (Web Speech API), bots de atención automatizados y flujos con modelos de lenguaje.</p>
+            <ul class="service-points">
+              <li>Comandos en lenguaje natural para paneles administrativos.</li>
+              <li>Automatización de tareas repetitivas de negocio.</li>
+              <li>Integración segura mediante APIs y webhooks.</li>
+            </ul>
+          </div>
+
+          <div class="service-card" id="service-devops">
+            <div class="service-icon">🚀</div>
+            <h3 class="service-title">Puesta en Marcha & Despliegue</h3>
+            <p class="service-desc">Configuración de entornos de producción en la nube (Vercel, GitHub Pages, VPS, Docker) con tuberías de despliegue continuo para que publicar cambios sea cosa de un clic.</p>
+            <ul class="service-points">
+              <li>Contenedores Docker y docker-compose listos.</li>
+              <li>Configuración de dominios, SSL y variables de entorno.</li>
+              <li>Guía paso a paso para que seas dueño total de tu infraestructura.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE WORKANA SCOPE & BUDGET ESTIMATOR -->
+    <section class="calculator-section" id="calculadora">
+      <div class="container">
+        <div class="section-badge">Herramienta Interactiva para Clientes</div>
+        <h2 class="section-title">Calculadora estimada de alcance y presupuesto</h2>
+        <p class="section-subtitle">Selecciona las características que necesitas para tu proyecto y obtén una estimación orientativa de plazos e inversión para iniciar nuestra conversación en Workana.</p>
+
+        <div class="calculator-card">
+          <form id="scope-form" class="calc-form" onsubmit="event.preventDefault();">
+            
+            <!-- Step 1: Project Type -->
+            <div class="calc-group">
+              <label class="calc-label">1. ¿Qué tipo de solución necesitas?</label>
+              <div class="calc-options-grid" id="opt-project-type">
+                <label class="calc-option">
+                  <input type="radio" name="projectType" value="landing" data-base-days="4" data-base-price="120" checked>
+                  <div class="opt-box">
+                    <span class="opt-title">Landing Page de Alto Impacto</span>
+                    <span class="opt-desc">Diseño moderno, ultra-rápida, responsive y orientada a captar clientes.</span>
+                  </div>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="projectType" value="mvp" data-base-days="12" data-base-price="380">
+                  <div class="opt-box">
+                    <span class="opt-title">MVP Web Full-Stack</span>
+                    <span class="opt-desc">Frontend + Backend + Base de datos para validar tu idea de negocio en el mercado.</span>
+                  </div>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="projectType" value="enterprise" data-base-days="24" data-base-price="750">
+                  <div class="opt-box">
+                    <span class="opt-title">Plataforma Web Completa / SaaS</span>
+                    <span class="opt-desc">Sistema robusto con roles, gestión de usuarios, pagos y arquitectura escalable.</span>
+                  </div>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="projectType" value="backend" data-base-days="10" data-base-price="320">
+                  <div class="opt-box">
+                    <span class="opt-title">API REST & Arquitectura Backend</span>
+                    <span class="opt-desc">Servicios seguros, bases de datos optimizadas y documentación OpenAPI.</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 2: Add-on Modules -->
+            <div class="calc-group">
+              <label class="calc-label">2. Módulos y funcionalidades adicionales</label>
+              <div class="calc-addons-grid" id="opt-addons">
+                <label class="addon-checkbox">
+                  <input type="checkbox" name="addons" value="auth" data-days="2" data-price="70">
+                  <span class="addon-box">
+                    <span class="addon-name">🔐 Autenticación & Roles (JWT/RBAC)</span>
+                  </span>
+                </label>
+                <label class="addon-checkbox">
+                  <input type="checkbox" name="addons" value="payments" data-days="3" data-price="90">
+                  <span class="addon-box">
+                    <span class="addon-name">💳 Pasarela de Pagos (Stripe / MercadoPago / PayPal)</span>
+                  </span>
+                </label>
+                <label class="addon-checkbox">
+                  <input type="checkbox" name="addons" value="realtime" data-days="3" data-price="80">
+                  <span class="addon-box">
+                    <span class="addon-name">⚡ Tiempo Real (WebSockets / Notificaciones)</span>
+                  </span>
+                </label>
+                <label class="addon-checkbox">
+                  <input type="checkbox" name="addons" value="admin" data-days="4" data-price="110">
+                  <span class="addon-box">
+                    <span class="addon-name">📊 Panel de Administración & Métricas</span>
+                  </span>
+                </label>
+                <label class="addon-checkbox">
+                  <input type="checkbox" name="addons" value="ai" data-days="4" data-price="130">
+                  <span class="addon-box">
+                    <span class="addon-name">🎙️ Agente de Voz / Integración de IA</span>
+                  </span>
+                </label>
+                <label class="addon-checkbox">
+                  <input type="checkbox" name="addons" value="tests" data-days="3" data-price="85">
+                  <span class="addon-box">
+                    <span class="addon-name">🧪 Suite de Pruebas Automatizadas (TDD)</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 3: Priority -->
+            <div class="calc-group">
+              <label class="calc-label">3. Urgencia y ritmo de entrega</label>
+              <div class="priority-selector">
+                <label class="prio-opt">
+                  <input type="radio" name="priority" value="standard" data-multiplier="1" checked>
+                  <span>Ritmo Estándar (Entregas semanales por hitos)</span>
+                </label>
+                <label class="prio-opt">
+                  <input type="radio" name="priority" value="express" data-multiplier="1.25">
+                  <span>Prioritario / Express (Dedicación intensiva)</span>
+                </label>
+              </div>
+            </div>
+
+          </form>
+
+          <!-- Real-Time Calculation Output Panel -->
+          <div class="calc-summary" id="calc-summary">
+            <div class="summary-header">
+              <span class="summary-badge">Estimación Orientativa</span>
+              <h4>Resumen Preliminar del Proyecto</h4>
+            </div>
+
+            <div class="summary-numbers">
+              <div class="sum-box">
+                <span class="sum-label">Tiempo Estimado</span>
+                <span class="sum-val" id="sum-days">~4 a 6 días</span>
+              </div>
+              <div class="sum-box highlight">
+                <span class="sum-label">Rango Estimado (USD)</span>
+                <span class="sum-val" id="sum-budget">$120 – $160</span>
+              </div>
+            </div>
+
+            <p class="sum-note">
+              * Estimación orientativa sujeta a revisión detallada de especificaciones. En Workana se estructura mediante hitos seguros garantizados.
+            </p>
+
+            <div class="summary-actions">
+              <button class="btn btn-primary" id="btn-copy-proposal">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copiar Requerimiento para Workana
+              </button>
+              <a href="https://www.workana.com/freelancer/yohandvl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-calc-workana">
+                Enviar a Yohan en Workana &rarr;
+              </a>
+            </div>
+            <div class="copy-alert" id="copy-alert" aria-live="polite"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section class="skills-section">
+      <div class="container">
+        <div class="section-badge">Competencias Verificadas</div>
+        <h2 class="section-title">Herramientas y tecnologías que domino</h2>
+        <p class="section-subtitle">No me limito a un solo lenguaje: selecciono la tecnología adecuada según las necesidades de rendimiento, costo y escala de tu proyecto.</p>
+
+        <div class="skills-grid">
+          
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title"><span class="cat-icon">🎨</span> Frontend & Interfaces</h3>
+            <ul class="skill-list">
+              <li><strong>Angular & TypeScript</strong> (Componentes reactivos, RxJS, Signals)</li>
+              <li><strong>React & Vite</strong> (Hooks modernos, estado limpio, SPAs)</li>
+              <li><strong>Vanilla CSS Moderno</strong> (CSS Grid, Flexbox, Glassmorphism, Microanimaciones)</li>
+              <li><strong>Ionic & Capacitor</strong> (Aplicaciones móviles híbridas iOS/Android)</li>
+              <li><strong>Accesibilidad Web</strong> (WCAG 2.2 y WAI-ARIA)</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title"><span class="cat-icon">⚙️</span> Backend & Sistemas</h3>
+            <ul class="skill-list">
+              <li><strong>Node.js & Express</strong> (APIs RESTful de alto rendimiento)</li>
+              <li><strong>Java 17+</strong> (TCP Sockets multihilo, concurrencia, Spring)</li>
+              <li><strong>WebSockets / Socket.io</strong> (Canales en tiempo real)</li>
+              <li><strong>PHP 8+</strong> (Arquitectura limpia y aplicaciones estables)</li>
+              <li><strong>Bases de Datos</strong> (SQLite WAL, PostgreSQL, MySQL)</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title"><span class="cat-icon">📐</span> Arquitectura & Estándares</h3>
+            <ul class="skill-list">
+              <li><strong>Arquitectura Hexagonal</strong> (Puertos y Adaptadores)</li>
+              <li><strong>Domain-Driven Design (DDD)</strong> (Lógica de dominio pura)</li>
+              <li><strong>Documentación C4 Model</strong> (Diagramas de arquitectura interactivos)</li>
+              <li><strong>Normas ISO/IEC/IEEE</strong> (15289, 42010, 29148, 29119)</li>
+              <li><strong>Ciberseguridad OWASP</strong> (ASVS L2, protección JWT, CSRF/XSS)</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title"><span class="cat-icon">🛠️</span> Herramientas & DevOps</h3>
+            <ul class="skill-list">
+              <li><strong>Git & GitHub</strong> (Git Flow, Commits Semánticos, Pull Requests)</li>
+              <li><strong>GitHub Pages & Vercel</strong> (Despliegues continuos automatizados)</li>
+              <li><strong>Docker & Docker Compose</strong> (Entornos reproducibles)</li>
+              <li><strong>Pruebas Automatizadas</strong> (Jest, Supertest, JUnit 5, PHPUnit)</li>
+              <li><strong>Contratos de API</strong> (OpenAPI 3.1 & Swagger UI)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FREELANCE WORK METHODOLOGY & FAQ -->
+    <section class="about-faq-section" id="sobre-mi">
+      <div class="container">
+        
+        <!-- Freelance Work Process -->
+        <div class="process-block">
+          <div class="section-badge">Proceso de Trabajo en Workana</div>
+          <h2 class="section-title">Cómo trabajaremos juntos paso a paso</h2>
+          <p class="section-subtitle">Sin sorpresas ni incertidumbre. Mi flujo de trabajo está diseñado para darte visibilidad completa en cada fase.</p>
+
+          <div class="process-steps-grid">
+            <div class="process-step-card">
+              <span class="step-number">01</span>
+              <h4>Elicitación & Alcance</h4>
+              <p>Analizamos tus requerimientos a fondo. Definimos el alcance exacto, los entregables y estructuramos los hitos de pago en Workana.</p>
+            </div>
+
+            <div class="process-step-card">
+              <span class="step-number">02</span>
+              <h4>Arquitectura & Diseño</h4>
+              <p>Antes de escribir código a ciegas, definimos el modelo de datos, la estructura modular y los contratos de API para evitar reprocesos.</p>
+            </div>
+
+            <div class="process-step-card">
+              <span class="step-number">03</span>
+              <h4>Desarrollo con Demos Diarias</h4>
+              <p>Construyo por módulos con pruebas automáticas. Recibirás avances funcionales regulares para dar feedback en tiempo real.</p>
+            </div>
+
+            <div class="process-step-card">
+              <span class="step-number">04</span>
+              <h4>Despliegue & Documentación</h4>
+              <p>Publicación en tu servidor de producción, entrega del repositorio Git con su documentación completa y garantía de soporte.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FREELANCE FAQ ACCORDION -->
+        <div class="faq-block">
+          <div class="section-badge">Preguntas Frecuentes</div>
+          <h2 class="section-title">Dudas comunes de clientes antes de contratar</h2>
+
+          <div class="faq-accordion" id="faq-accordion">
+            
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Cómo manejamos los pagos y la seguridad en Workana?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Trabajamos 100% bajo el sistema de depósito en garantía (Escrow) de Workana. Tú depositas los fondos del hito acordado en la plataforma y el dinero solo se libera cuando hayas revisado y aprobado el entregable funcional a tu entera satisfacción.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Qué pasa si necesito ajustes o cambios durante el desarrollo?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Las revisiones y ajustes normales dentro del alcance acordado están completamente incluidos. Si durante el camino decides agregar nuevas funcionalidades no contempladas al inicio, evaluamos el impacto juntos y creamos un hito adicional con total transparencia.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>¿El código fuente y la propiedad intelectual me pertenecerán?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Totalmente. Al finalizar el proyecto y liberarse los fondos, recibirás el control total del repositorio Git, los accesos a servidores y todos los derechos sobre el código fuente, sin dependencias propietarias ni bloqueos.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Qué soporte o garantía ofreces después de la entrega final?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Todos mis desarrollos incluyen un periodo de garantía de 15 a 30 días post-entrega para resolver cualquier eventual anomalía técnica o duda de operación sin costo adicional.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Puedes trabajar con un equipo existente o continuar un código ya iniciado?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Sí. Me adapto rápidamente a flujos de trabajo en equipo (Git Flow, pull requests con revisión de código) y puedo integrarme para acelerar entregas, refactorizar módulos problemáticos o añadir nuevas características.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <div class="section-badge">Contacto Directo</div>
+            <h2 class="contact-title">¿Tienes una idea o proyecto en mente?</h2>
+            <p class="contact-subtitle">Conversemos sobre tus requerimientos y te daré una propuesta clara con tiempos e hitos para iniciar de inmediato.</p>
+          </div>
+
+          <div class="contact-channels-grid">
+            
+            <a href="https://www.workana.com/freelancer/yohandvl" target="_blank" rel="noopener noreferrer" class="channel-card workana-card" id="contact-workana">
+              <div class="channel-icon">💼</div>
+              <div class="channel-info">
+                <h4>Perfil en Workana</h4>
+                <p>Contratación protegida por hitos y depósito en garantía</p>
+                <span class="channel-action">Abrir perfil de Workana &rarr;</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/YohanDvl" target="_blank" rel="noopener noreferrer" class="channel-card github-card" id="contact-github">
+              <div class="channel-icon">🐙</div>
+              <div class="channel-info">
+                <h4>GitHub (@YohanDvl)</h4>
+                <p>Explora repositorios públicos, commits y arquitectura</p>
+                <span class="channel-action">Ver perfil de GitHub &rarr;</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/?text=Hola%20Yohan,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto" target="_blank" rel="noopener noreferrer" class="channel-card whatsapp-card" id="contact-whatsapp">
+              <div class="channel-icon">💬</div>
+              <div class="channel-info">
+                <h4>WhatsApp Directo</h4>
+                <p>Respuesta rápida para consultas preliminares</p>
+                <span class="channel-action">Enviar mensaje &rarr;</span>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="quick-contact-box">
+            <p>¿Prefieres enviarme los detalles de tu proyecto por mensaje?</p>
+            <a href="https://www.workana.com/freelancer/yohandvl" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-contact-main-cta">
+              Iniciar Proyecto en Workana
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="brand-badge">&lt;/&gt;</span>
+        <span><strong>Yohan Maldonado</strong> — Ingeniería de Software & Desarrollo Web Freelance</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.workana.com/freelancer/yohandvl" target="_blank" rel="noopener noreferrer">Workana</a>
+        <a href="https://github.com/YohanDvl" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#hero">Volver arriba ↑</a>
+      </div>
+    </div>
+    <div class="container footer-copyright">
+      <p>© 2026 Yohan Maldonado. Diseñado y construido con estándares de ingeniería, accesibilidad y código limpio.</p>
+    </div>
+  </footer>
+
+  <!-- CASE STUDY MODAL -->
+  <div class="modal-backdrop" id="case-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+      <div class="modal-body" id="modal-content-area">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
